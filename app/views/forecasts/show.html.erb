@@ -1,0 +1,30 @@
+<!-- app/views/forecasts/show.html.erb -->
+
+<h2>Forecast Results</h2>
+
+
+<div class="forecast-results">
+  <% if @cached %>
+    <span class="badge bg-success">Cached Result</span>
+  <% end %>
+
+  <p>
+    <strong>Current Temperature:</strong>
+    <span class="temp"><%= @forecast[:current_temp] %>°C</span>
+  </p>
+
+  <p>
+    <strong>Condition:</strong>
+    <span class="condition"><%= @forecast[:condition] %></span>
+  </p>
+
+  <p>
+    <strong>High / Low:</strong>
+    <span class="high-low">
+      <%= @forecast[:high] %>°C / <%= @forecast[:low] %>°C
+    </span>
+  </p>
+
+
+  <%= link_to "Search Again", new_forecast_path, class: "btn btn-secondary" %>
+</div>

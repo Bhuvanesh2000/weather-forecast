@@ -1,0 +1,15 @@
+<!-- app/views/forecasts/new.html.erb -->
+
+<h1>Weather Forecast</h1>
+
+<!-- Weather address input form -->
+<%= form_with url: forecasts_path, method: :post, data: { turbo: false }, html: { class: "forecast-form" } do |f| %>
+  <div class="form-group">
+    <%= f.label :address, "Enter Address:", class: "form-label" %>
+    <%= f.text_field :address, class: "form-control", placeholder: "e.g., Gachibowli, Hyderabad, India" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Get Forecast", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,80 @@
+/* app/assets/stylesheets/forecast.css */
+
+/* Flash messages */
+.flash {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.flash.alert {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+.flash.notice {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+/* Form container */
+.forecast-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Form group spacing */
+.forecast-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.forecast-form .form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333333;
+}
+
+/* Text input */
+.forecast-form .form-control {
+  width: 90%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.forecast-form .form-control:focus {
+  border-color: #3182ce;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+/* Submit button */
+.forecast-form .btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3182ce;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.forecast-form .btn:hover {
+  background-color: #2b6cb0;
+}
