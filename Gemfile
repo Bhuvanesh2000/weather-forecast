@@ -56,7 +56,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 8.0'
   gem 'webmock'      # for mocking external API requests
 end
 
